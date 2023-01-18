@@ -1,45 +1,43 @@
-﻿//int a = 358;
-//int reminder = 0;
-//int sum = 0;
-//for (int i = 0; i < a; i++)
+﻿//int[] numbers = { 12, 76, 90, 124, 35 };
+//int temp;
+//for (int i = 0; i < numbers.Length; i++)
 //{
-//    reminder = a % 10;
-//    sum += reminder;
-//    a /= 10;
-//}
-//if (sum % 2 == 0)
-//{
-//    Console.WriteLine("sum is even");
-
-//}
-
-//int b = 100;
-//int sum = 0;
-//for (int i = b; i > 0; i--)
-//{
-//    if (i % 13 == 0)
+//    for (int j = i + 1; j < numbers.Length; j++)
 //    {
-//        Console.WriteLine(i);
-//        sum += i;
+//        if (numbers[i] > numbers[j])
+//        {
+//            temp = numbers[i];
+//            numbers[i] = numbers[j];
+//            numbers[j] = temp;
+
+//        }
 //    }
+//    Console.WriteLine(numbers[i]);
 //}
-//Console.WriteLine(sum);
 
-int logo = 571;
-int min = 9;
-int reminder;
-for (int i = 0; i < logo; i++)
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+
+int[] numbers = { 20, 30, 40, 50, 60, 70 };
+int reversedArray;
+int dddd = 0;
+for (int i = 0; i < numbers.Length; i++)
 {
-    reminder = logo % 10;
-if ( reminder < min)
+    for (int y = i + 1; y < numbers.Length; y++)
+        reversedArray = numbers[i] + dddd;
     {
-        min = reminder;
+        if (numbers[i] > numbers[y])
+        {
+            numbers[i] = dddd;
+            numbers[i] = numbers[y];
+            numbers[y] = dddd;
+
+        }
+
+
     }
-    logo = logo / 10; 
+    Console.WriteLine(reversedArray);
+
 }
-Console.WriteLine(min);
-
-
-
 
 
